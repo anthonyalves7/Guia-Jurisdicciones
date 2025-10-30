@@ -1,12 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guía de Jurisdicciones</title>
+
+    <!-- Fuente bonita (opcional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- 🚀 Tailwind vía CDN (rápido y suficiente para tu caso) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Config mínima para colores/grids suaves
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          }
+        }
+      }
+    </script>
+
+    <style>
+      /* Ajuste base para que se vea elegante incluso sin más CSS */
+      html, body { height: 100%; }
+      body { font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif; }
+    </style>
   </head>
-  <body>
+  <body class="bg-slate-50">
     <div id="root"></div>
   </body>
 </html>
